@@ -1,0 +1,21 @@
+----------------------tinker build warning ------------------------------------
+tinker auto operation: 
+excluding annotation processor and source template from app packaging. Enable dx jumboMode to reduce package size.
+enable dx jumboMode to reduce package size.
+disable preDexLibraries to prevent ClassDefNotFoundException when your app is booting.
+
+tinker will change your build configs:
+we will add TINKER_ID=1.0 in your build output manifest file build/intermediates/manifests/full/*
+
+if minifyEnabled is true
+you will find the gen proguard rule file at build/intermediates/tinker_intermediates/tinker_proguard.pro
+and we will help you to put it in the proguardFiles.
+
+if multiDexEnabled is true
+you will find the gen multiDexKeepProguard file at build/intermediates/tinker_intermediates/tinker_multidexkeep.pro
+and we will help you to put it in the MultiDexKeepProguardFile.
+
+if applyResourceMapping file is exist
+we will build app apk with resource R.txt file
+if resources.arsc has changed, you should use applyResource mode to build the new apk!
+-----------------------------------------------------------------

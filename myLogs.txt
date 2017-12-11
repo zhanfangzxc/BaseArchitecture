@@ -1,0 +1,21 @@
+taskNames is [build]
+current module is app
+apply plugin is com.android.application
+Configuration 'compile' in project ':app' is deprecated. Use 'implementation' instead.
+Configuration 'compile' in project ':service' is deprecated. Use 'implementation' instead.
+taskNames is [build]
+current module is tkymodule
+apply plugin is com.android.application
+taskNames is [build]
+current module is usermodule
+apply plugin is com.android.application
+:app:preBuild UP-TO-DATE
+:library:preBuild UP-TO-DATE
+:library:preDebugBuild UP-TO-DATE
+:library:checkDebugManifest UP-TO-DATE
+:library:processDebugManifest UP-TO-DATE
+:service:preBuild UP-TO-DATE
+:service:preDebugBuild UP-TO-DATE
+:service:checkDebugManifest UP-TO-DATE
+:service:processDebugManifest UP-TO-DATE
+:app:preDebugBuild
