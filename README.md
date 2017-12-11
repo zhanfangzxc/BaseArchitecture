@@ -10,3 +10,9 @@
 - model 实体类
 - viewmodel viewmodel模块
 
+### 参考项目
+
+[组件化开发](https://github.com/luojilab/DDComponentForAndroid)
+
+[tinker接入](https://juejin.im/post/5a27bdaf6fb9a044fa19bcfc)
+
