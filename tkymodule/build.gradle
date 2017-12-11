@@ -7,6 +7,9 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
+    lintOptions {
+        abortOnError false
+    }
 
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
@@ -15,7 +18,11 @@ android {
         versionName rootProject.ext.versionName
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
     }
 
     buildTypes {

@@ -20,6 +20,18 @@ android {
                 includeCompileClasspath = true
             }
         }
+        /**
+         * buildConfig can change during patch!
+         * we can use the newly value when patch
+         */
+        buildConfigField "String", "MESSAGE", "\"I am the base apk\""
+//        buildConfigField "String", "MESSAGE", "\"I am the patch apk\""
+        /**
+         * client version would update with patch
+         * so we can get the newly git version easily!
+         */
+        buildConfigField "String", "TINKER_ID", "\"${getTinkerIdValue()}\""
+        buildConfigField "String", "PLATFORM",  "\"all\""
     }
     dexOptions {
         // 支持大工程模式
@@ -35,6 +47,10 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError false
     }
 }
 

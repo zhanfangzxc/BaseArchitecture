@@ -20,6 +20,7 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.smartstudy.uskid.tinker.app.BuildInfo;
 import com.smartstudy.uskid.tinker.crash.SampleUncaughtExceptionHandler;
 import com.smartstudy.uskid.tinker.util.Utils;
 import com.tencent.tinker.lib.listener.DefaultPatchListener;
